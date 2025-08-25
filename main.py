@@ -59,6 +59,7 @@ def obter_dados(limit: int = 5000, offset: int = 0): # Adiciona parâmetros de p
                 SELECT
 	CASE
 		WHEN u.nm_unidade = 'Campos' THEN 'Itaperuna Muriae'
+        WHEN u.id = 13 then 'Volta Redonda'
 		ELSE u.nm_unidade
 	END AS nm_unidade,
 	i.id AS codigo_integrante,
