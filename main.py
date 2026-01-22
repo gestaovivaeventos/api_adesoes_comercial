@@ -85,7 +85,7 @@ def obter_dados(limit: int = 5000, offset: int = 0): # Adiciona parâmetros de p
 	f.dt_cadastro AS dt_cadastro_fundo,
 	'' AS total_lancamentos,
 	fc.vl_plano AS vl_plano,
-	'' AS cadastrado_por,
+	cadastrado_por AS cadastrado_por,
 	CASE
 		WHEN us.cpf IS NULL THEN us.nome
 		ELSE NULL
